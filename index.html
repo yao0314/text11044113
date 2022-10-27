@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:標楷體;
+}
+header {
+  background-color:none;
+  padding: 0px;
+  font-size: 0px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 40%;
+  height: 1650px;
+  padding: 20px;
+  color: white; 
+  background: grey;
+  background-attachment:fixed;
+  background-repeat: repeat;
+}
+
+nav ul {
+  list-style-type: square;
+  padding: 0;
+  font-size: 25px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  height: 1650px;
+  line-height: 15px;
+  background-image:url(image/image2.jpg) ;
+  background-repeat: repeat-y repeat-x;
+  background-size:100%
+}
+article ul {
+  list-style-type: square;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+article table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  border-bottom: solid 2px white;
+}
+
+table tr:last-child{
+  border-bottom: none;
+}
+
+table th{
+  position: relative;
+  width: 30%;
+  background-color: #7d7d7d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th:after{
+  display: block;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top:calc(50% - 10px);
+  right:-10px;
+  border-left: 10px solid #7d7d7d;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+table td{
+  text-align: left;
+  width: 70%;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px 0;
+}
+.main {
+  margin: 20px auto;
+  align-items: center;
+  width: 80%;
+} 
+
+footer {
+  background-color:none;
+  height: 0px;
+  padding: 0px;
+}
+.image1{float: left;}
+
+    </style>
+</head>
+<body>
+<form method="post"action="mailto:980072g@gmail.com"enctype="text/plain">
+<nav>
+    <img src="image/image1.jpg"width="200" height="250" float:left;>
+    <h1 >個人資訊</h1>
+    <h2>一個隨和但對某些東西有堅持的人</h2>
+    <ul>
+        <li>姓名:張維銚</li>
+        <li>系級:資管二甲</li>
+        <li>生日:2003/03/14</li>
+        <li>興趣:打遊戲、看小說</li>
+        <li>個人特質:友善的、慷慨的</li>
+        <li>優點:熱心助人</li>
+        <li>缺點:有時候很沒行動力</li>
+    </ul>   
+    <h1>聯絡資訊</h1>
+	<h3>如果有想要多多了解我，或是對網站有覺得需要改善的地方的話，可以透過填寫下面資訊聯繫我喔~</h3>
+			<input type="text" name="name"placeholder="姓名" /><br>
+			<input type="email" name="email"placeholder="Email" /><br>
+			<textarea name="message" placeholder="想說的話" rows="4"wrap="hard"></textarea>
+	<ul>
+		<li><input type="submit" value="送出" /></li>
+	<ul>
+		<li>
+			<h3>地址</h3>
+				320,桃園市中壢區國泰街72號3樓<br/>								
+		</li>
+		<li>
+			<h3>電話</h3>
+				0900-613-766
+		</li>
+		<li>
+			<h3>Email</h3>
+			980072g@gmail.com
+		</li>
+    <li>
+			<h3>FaceBook</h3>
+			<a href="https://www.facebook.com/profile.php?id=100009362270106">張維銚</a>
+		</li>
+    <li>
+      <h3>Instergram</h3>
+      wei_yao0314
+    </li>
+	</ul>
+</nav>
+   <article>
+    <h1>個人技能</h1>
+    <h3>影片剪輯技能</h3>
+    <h3>作品實例:管理學期末專題影片</h3>
+    <iframe width="400" src="https://youtu.be/21R6yIXR-AE" frameborder="0"allowfullscreen></iframe><br>
+    <a href="https://youtu.be/21R6yIXR-AE"><h4>#影片無法播放點此連結</h4></a>
+    <h3>unity遊戲製作</h3>
+    <h3>作品實例:射擊遊戲</h3>
+    <video src="vedio/vedio1.mp4"controls width="400"></video>
+    <hr>
+    <h1>程式技能</h1>
+    <ul>
+        <li>python</li>
+        <progress max="100" value="60">60%</progress>
+        <li>html/css</li>
+        <progress max="100" value="50">50%</progress>
+        <li>java</li>
+        <progress max="100" value="60">60%</progress>
+    </ul>
+    <hr>
+    <h1>個人經歷</h1>
+    <table>
+    <th>大一上學期</th>
+    <td><a href="asset/bee2.pdf">企業概論-蜂味猶存</a><br>(學習如何販售產品行銷)</td>
+    <tr>
+    <th>大一下學期</th>
+    <td><a href="asset/manage-math.pdf">管理數學-期末專題</a><br>(將這堂課所學期到的總結成一個報告)</td>
+    </tr>
+    <tr>
+        <th>大一下學期</th>
+        <td><a href="https://youtu.be/Ozn70YMcaLk">自然科學和人工智慧-福壽螺專題研究<br></a>(透過大數據了解台灣的農害問題)</td>
+    </tr>
+</table>
+<hr>
+<h1>社團活動經歷</h1>
+<table>
+    <tr>
+        <th>中原學生會</th>
+        <td>擔任權益部次長，原定要邀請柯文哲市長到校演講，在其<br>中做為總召負責統籌規劃事務，可惜最後因疫情沒能辦成，<br>但是其他學生會的活動我仍擔任工人協助<a href="asset/life-and-death.pdf">相關活動企劃書</a></td>
+    </tr>
+    <tr>
+        <th>基北聯誼會</th>
+        <td>擔任活動組，在期初社大的時候作為隊輔帶動小組氣氛</td>
+    </tr>
+</table>
+<hr>
+<h1>活動照片</h1>
+<image src="image/image3.jpg"width="300"></image><image src="image/image4.png"width="300"></image>
+   </article>
+</body>
+</html>
